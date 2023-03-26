@@ -91,12 +91,24 @@
                                                 <subviews>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="wtY-zB-SfG">
                                                         <rect key="frame" x="-2" y="0.0" width="247" height="31"/>
+                                                        <color key="minimumTrackTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <connections>
+                                                            <action selector="redColorSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="qpr-G2-paf"/>
+                                                        </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="uRp-gw-Qp1">
                                                         <rect key="frame" x="-2" y="41" width="247" height="31"/>
+                                                        <color key="minimumTrackTintColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <connections>
+                                                            <action selector="greenColorSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="oBT-EW-79t"/>
+                                                        </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="AOZ-Jb-f78">
                                                         <rect key="frame" x="-2" y="82" width="247" height="31"/>
+                                                        <color key="minimumTrackTintColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <connections>
+                                                            <action selector="blueColorSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="R3h-sH-qKO"/>
+                                                        </connections>
                                                     </slider>
                                                 </subviews>
                                                 <constraints>
@@ -117,6 +129,15 @@
                             <constraint firstItem="d5I-YC-Yu3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="sta-Iz-gJs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueColorSlider" destination="AOZ-Jb-f78" id="egH-1z-eYJ"/>
+                        <outlet property="blueColorValueLabel" destination="ZEe-EF-DiJ" id="wqg-Pl-hDG"/>
+                        <outlet property="greenColorSlider" destination="uRp-gw-Qp1" id="6GI-4N-iy3"/>
+                        <outlet property="greenColorValueLabel" destination="YiH-cN-cSU" id="PPm-hr-ytb"/>
+                        <outlet property="palette" destination="sMz-dA-n9X" id="mKY-jh-aSE"/>
+                        <outlet property="redColorSlider" destination="wtY-zB-SfG" id="SB8-Ph-rYB"/>
+                        <outlet property="redColorValueLabel" destination="JbL-xz-qRt" id="PQy-TT-Kzs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
